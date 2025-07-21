@@ -13,7 +13,7 @@ function App() {
   const [billDate, setBillDate] = useState(() => new Date().toISOString().split('T')[0]);
 
   useEffect(() => {
-    document.title = "Mahalakshmi Store Bill"; // ✅ Set page title to avoid "React App" in print
+    document.title = "Mahalakshmi Store Bill";
   }, []);
 
   const handleAddProduct = (product) => {
@@ -57,7 +57,7 @@ function App() {
     };
 
     try {
-      const res = await fetch('http://localhost:5000/api/bills', {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/bills`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bill),

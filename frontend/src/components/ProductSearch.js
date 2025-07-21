@@ -19,7 +19,7 @@ function ProductSearch({ onAddProduct }) {
       }
 
       try {
-        const res = await fetch(`http://localhost:5000/api/products?search=${query}`);
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/products?search=${query}`);
         const data = await res.json();
         setSuggestions(data);
         setShowSuggestions(true);
