@@ -1,0 +1,28 @@
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.bill-table th {
+  background-color: #e5e7eb;
+  padding: 10px;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+  font-weight: 600;
+}
+
+.bill-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.total-row td {
+  font-weight: bold;
+  background-color: #f3f4f6;
+  color: #111;
+}

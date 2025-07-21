@@ -1,0 +1,184 @@
+body {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Style the shop name */
+h2 {
+  font-size: 45px;
+  margin-bottom: 6px; /* 👈 Reduced space below shop name */
+  color: #222;
+  font-weight: 700;
+  font-family: 'Segoe UI', 'Noto Sans Tamil', sans-serif;
+  text-align: center;
+}
+
+/* Address directly under the shop name */
+.shop-address {
+  font-size: 16px;
+  color: #555;
+  margin: 0; /* 👈 Remove default margin */
+  text-align: center;
+  line-height: 1.4;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 60px; /* 👈 Add this to create space from the address */
+  width: 100%;
+  align-items: center;
+}
+
+.input-group input {
+  width: 80%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Ensure parent of input is positioned for absolute dropdown */
+.input-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Suggestion box will now be aligned just below the input */
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 0 0 6px 6px;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.total-row {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #222;
+}
+
+.bill-header {
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Bill Table Styles */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.bill-table th,
+.bill-table td {
+  border: 1px solid #ccc;
+  padding: 14px 12px;
+  text-align: center;
+  line-height: 1.6;
+  min-width: 120px; /* 👈 Forces wider columns */
+}
+
+.bill-table th {
+  background-color: #e2e8f0;
+  color: #333;
+}
+
+.bill-table td {
+  color: #444;
+}
+
+.bill-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.app-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* 👈 Increased from 700px */
+  width: 100%;
+  padding: 30px;
+}
+
+.product-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 18px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  box-sizing: border-box;
+}

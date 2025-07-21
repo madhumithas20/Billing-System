@@ -1,0 +1,61 @@
+@media print {
+  .non-print,
+  button,
+  input,
+  .suggestions {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .app-container {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .bill-header {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  @page {
+    margin: 0;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: block !important;
+  }
+
+  .non-print {
+    display: none !important;
+  }
+}
+
+/* ✨ NEW: Add spacing between shop address and customer input */
+.customer-input-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
