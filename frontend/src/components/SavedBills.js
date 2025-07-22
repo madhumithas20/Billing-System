@@ -29,7 +29,7 @@ const SavedBills = () => {
     if (!window.confirm('Are you sure you want to delete this bill?')) return;
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/bills/${id}`, { method: 'DELETE' });
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/bills/${id}`, { method: 'DELETE' });
       if (res.ok) setBills(prev => prev.filter(bill => bill._id !== id));
       else alert('Failed to delete bill');
     } catch (err) {
