@@ -102,7 +102,7 @@ function ProductSearch({ onAddProduct }) {
           onKeyDown={handleQuantityKeyDown}
           style={{ marginTop: '10px' }}
         >
-          {Array.from({ length: 20 }, (_, i) => i + 1).map((qty) => (
+          {Array.from({ length: 500 }, (_, i) => i + 1).map((qty) => (
             <option key={qty} value={qty}>
               {qty}
             </option>
